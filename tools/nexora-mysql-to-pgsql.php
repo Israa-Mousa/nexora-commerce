@@ -110,6 +110,13 @@ function truncate_pg_tables(PDO $pg, array $tables): void
 function sync_pg_sequences(PDO $pg, array $tables): void
 {
     foreach ($tables as $table) {
+        $column = $pg->prepare("SELECT 1 FROM information_schema.columns WHERE table_schema = 'public' AND table_name = ? AND column_name = 'id'");
+        $column->execute([$table]);
+
+        if (! $column->fetchColumn()) {
+            continue;
+        }
+
         $tableName = $pg->quote('public.'.quote_pg_identifier($table));
         $sequence = $pg->query("SELECT pg_get_serial_sequence($tableName, 'id')")->fetchColumn();
 
