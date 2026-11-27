@@ -12,6 +12,11 @@ if [[ -z "${APP_KEY:-}" ]]; then
     exit 1
 fi
 
+# Render's generated value is plain base64 of 32 random bytes; Laravel expects "base64:<value>".
+if [[ "$APP_KEY" != base64:* ]]; then
+    export APP_KEY="base64:${APP_KEY}"
+fi
+
 # Managed MySQL (e.g. Aiven) needs TLS: the CA certificate is passed as text
 # in DB_SSL_CA_PEM and written to a file for PDO.
 if [[ -n "${DB_SSL_CA_PEM:-}" ]]; then

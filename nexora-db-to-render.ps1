@@ -1,0 +1,34 @@
+<#
+  Nexora Commerce - copy the local MySQL store data into the Render PostgreSQL database.
+
+  1. Deploy once on Render first (the deploy creates the tables).
+  2. In Render: Dashboard > nexora-db > Connect > copy the "External Database URL".
+  3. Run from the project folder:
+       powershell -ExecutionPolicy Bypass -File .\nexora-db-to-render.ps1
+     and paste the URL when asked (input is hidden, never printed or saved).
+
+  The local MySQL database is only read. Only empty PostgreSQL tables are filled.
+#>
+$ErrorActionPreference = 'Stop'
+$root = Split-Path -Parent $MyInvocation.MyCommand.Path
+Set-Location $root
+
+$php = Join-Path $env:LOCALAPPDATA 'Microsoft\WinGet\Packages\PHP.PHP.8.4_Microsoft.Winget.Source_8wekyb3d8bbwe\php.exe'
+if (-not (Test-Path $php)) { $php = (Get-Command php -ErrorAction Stop).Source }
+$extDir = Join-Path (Split-Path -Parent $php) 'ext'
+if (-not (Test-Path (Join-Path $extDir 'php_pdo_pgsql.dll'))) { throw "php_pdo_pgsql.dll was not found in $extDir" }
+
+$secure = Read-Host 'Paste the External Database URL from Render (hidden)' -AsSecureString
+$url = [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+if (-not $url.StartsWith('postgres')) { throw 'That does not look like a PostgreSQL URL (it should start with postgresql://).' }
+
+$env:NEXORA_PG_URL = $url
+try {
+    & $php -d "extension_dir=$extDir" -d extension=pdo_mysql -d extension=pdo_pgsql -d extension=mbstring (Join-Path $root 'tools\nexora-mysql-to-pgsql.php')
+    if ($LASTEXITCODE -ne 0) { throw 'The copy did not finish - see the messages above.' }
+    Write-Host ''
+    Write-Host 'Done. In Render, open nexora-commerce and press "Manual Deploy > Restart" (or tell Claude) so the store reloads.' -ForegroundColor Green
+} finally {
+    Remove-Item Env:\NEXORA_PG_URL -ErrorAction SilentlyContinue
+    $url = $null
+}

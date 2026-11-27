@@ -24,12 +24,12 @@ FROM php:${PHP_VERSION}-fpm-bookworm AS app
 RUN apt-get update && apt-get install -y --no-install-recommends \
         nginx supervisor gettext-base unzip git ca-certificates \
         libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev \
-        libicu-dev libzip-dev libgmp-dev libxml2-dev libonig-dev \
+        libicu-dev libzip-dev libgmp-dev libxml2-dev libonig-dev libpq-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install -j"$(nproc)" \
-        bcmath calendar exif gd gmp intl mbstring opcache pdo_mysql soap sockets zip \
-    && apt-get purge -y --auto-remove libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev libicu-dev libzip-dev libgmp-dev libxml2-dev libonig-dev \
-    && apt-get install -y --no-install-recommends libfreetype6 libjpeg62-turbo libpng16-16 libwebp7 libicu72 libzip4 libgmp10 libxml2 libonig5 \
+        bcmath calendar exif gd gmp intl mbstring opcache pdo_mysql pdo_pgsql soap sockets zip \
+    && apt-get purge -y --auto-remove libfreetype6-dev libjpeg62-turbo-dev libpng-dev libwebp-dev libicu-dev libzip-dev libgmp-dev libxml2-dev libonig-dev libpq-dev \
+    && apt-get install -y --no-install-recommends libpq5 libfreetype6 libjpeg62-turbo libpng16-16 libwebp7 libicu72 libzip4 libgmp10 libxml2 libonig5 \
     && rm -rf /var/lib/apt/lists/* /etc/nginx/sites-enabled/default
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
