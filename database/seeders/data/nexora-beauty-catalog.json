@@ -1,0 +1,2063 @@
+{
+ "_note": "Nexora Beauty & Personal Care DEMO catalog. All brands, products, prices and ingredient listings are fictional sample data for presentation only. Not real stock. Read by database/seeders/NexoraBeautySeeder.php and the image generator.",
+ "currency": "ILS",
+ "disclaimer": {
+  "en": "Demo product for store presentation only. Brand, formula and ingredient listing are illustrative; this is not real stock. Always read the label of a real product before use.",
+  "ar": "منتج تجريبي لعرض المتجر فقط. العلامة والتركيبة وقائمة المكونات توضيحية، وهذا ليس مخزونًا حقيقيًا. اقرأ دائمًا ملصق المنتج الحقيقي قبل الاستخدام."
+ },
+ "categories": [
+  {
+   "key": "skincare",
+   "slug": "skincare",
+   "en": "Skincare",
+   "ar": "العناية بالبشرة",
+   "legacy": [
+    "women-skincare"
+   ],
+   "children": [
+    {
+     "key": "skincare-cleansers",
+     "slug": "cleansers-face-wash",
+     "en": "Cleansers & Face Wash",
+     "ar": "الغسولات ومنظفات الوجه",
+     "legacy": [
+      "women-cleansers"
+     ]
+    },
+    {
+     "key": "skincare-toners",
+     "slug": "toners",
+     "en": "Toners",
+     "ar": "التونر",
+     "legacy": [
+      "women-toners"
+     ]
+    },
+    {
+     "key": "skincare-serums",
+     "slug": "serums-treatments",
+     "en": "Serums & Treatments",
+     "ar": "السيروم والعلاجات",
+     "legacy": [
+      "women-serums"
+     ]
+    },
+    {
+     "key": "skincare-moisturizers",
+     "slug": "moisturizers",
+     "en": "Moisturizers",
+     "ar": "المرطبات",
+     "legacy": [
+      "women-moisturizers"
+     ]
+    },
+    {
+     "key": "skincare-sunscreen",
+     "slug": "sunscreen",
+     "en": "Sunscreen",
+     "ar": "واقيات الشمس",
+     "legacy": [
+      "women-sunscreen"
+     ]
+    },
+    {
+     "key": "skincare-masks",
+     "slug": "face-masks",
+     "en": "Masks",
+     "ar": "الماسكات",
+     "legacy": [
+      "women-masks-exfoliators"
+     ]
+    },
+    {
+     "key": "skincare-exfoliators",
+     "slug": "exfoliators",
+     "en": "Exfoliators",
+     "ar": "المقشّرات"
+    }
+   ],
+   "tagline_en": "Cleansers, serums, moisturizers and sun care for a calm daily routine.",
+   "tagline_ar": "غسولات وسيروم ومرطبات وواقيات شمس لروتين يومي هادئ."
+  },
+  {
+   "key": "makeup",
+   "slug": "makeup",
+   "en": "Makeup",
+   "ar": "المكياج",
+   "legacy": [
+    "women-makeup"
+   ],
+   "children": [
+    {
+     "key": "makeup-face",
+     "slug": "foundation-concealer",
+     "en": "Foundation & Concealer",
+     "ar": "كريم الأساس والكونسيلر",
+     "legacy": [
+      "women-foundation-concealer"
+     ]
+    },
+    {
+     "key": "makeup-lips",
+     "slug": "lipstick-lip-gloss",
+     "en": "Lipstick & Lip Gloss",
+     "ar": "أحمر الشفاه وملمّع الشفاه",
+     "legacy": [
+      "women-lip-products"
+     ]
+    },
+    {
+     "key": "makeup-eyes",
+     "slug": "mascara-eyeliner",
+     "en": "Mascara & Eyeliner",
+     "ar": "الماسكارا والآيلاينر",
+     "legacy": [
+      "women-eye-makeup"
+     ]
+    },
+    {
+     "key": "makeup-cheeks",
+     "slug": "blush-highlighter",
+     "en": "Blush & Highlighter",
+     "ar": "البلاشر والهايلايتر"
+    },
+    {
+     "key": "makeup-tools",
+     "slug": "makeup-brushes-tools",
+     "en": "Makeup Brushes & Tools",
+     "ar": "فرش وأدوات المكياج"
+    }
+   ],
+   "tagline_en": "Complexion, lips, eyes and cheeks — easy, wearable colour.",
+   "tagline_ar": "الوجه والشفاه والعيون والخدود — ألوان سهلة للاستخدام اليومي."
+  },
+  {
+   "key": "hair",
+   "slug": "hair-care",
+   "en": "Hair Care",
+   "ar": "العناية بالشعر",
+   "legacy": [
+    "women-hair-care"
+   ],
+   "children": [
+    {
+     "key": "hair-shampoo",
+     "slug": "shampoo",
+     "en": "Shampoo",
+     "ar": "الشامبو"
+    },
+    {
+     "key": "hair-conditioner",
+     "slug": "conditioner",
+     "en": "Conditioner",
+     "ar": "البلسم"
+    },
+    {
+     "key": "hair-masks",
+     "slug": "hair-masks",
+     "en": "Hair Masks",
+     "ar": "ماسكات الشعر"
+    },
+    {
+     "key": "hair-oils",
+     "slug": "hair-oils",
+     "en": "Hair Oils",
+     "ar": "زيوت الشعر"
+    },
+    {
+     "key": "hair-styling",
+     "slug": "styling-products",
+     "en": "Styling Products",
+     "ar": "منتجات التصفيف"
+    }
+   ],
+   "tagline_en": "Cleanse, condition, treat and style.",
+   "tagline_ar": "تنظيف وترطيب وعناية وتصفيف."
+  },
+  {
+   "key": "body",
+   "slug": "body-care",
+   "en": "Body Care",
+   "ar": "العناية بالجسم",
+   "legacy": [
+    "women-body-care"
+   ],
+   "children": [
+    {
+     "key": "body-wash",
+     "slug": "body-wash",
+     "en": "Body Wash",
+     "ar": "غسول الجسم"
+    },
+    {
+     "key": "body-lotion",
+     "slug": "body-lotion",
+     "en": "Body Lotion",
+     "ar": "لوشن الجسم"
+    },
+    {
+     "key": "body-hands",
+     "slug": "hand-care",
+     "en": "Hand Care",
+     "ar": "العناية باليدين"
+    },
+    {
+     "key": "body-scrubs",
+     "slug": "body-scrubs",
+     "en": "Body Scrubs",
+     "ar": "مقشّرات الجسم"
+    }
+   ],
+   "tagline_en": "Washes, lotions, scrubs and hand care.",
+   "tagline_ar": "غسولات ولوشن ومقشّرات وعناية باليدين."
+  },
+  {
+   "key": "fragrances",
+   "slug": "fragrances",
+   "en": "Fragrances",
+   "ar": "العطور",
+   "legacy": [
+    "women-fragrances"
+   ],
+   "children": [
+    {
+     "key": "frag-women",
+     "slug": "womens-fragrances",
+     "en": "Women's Fragrances",
+     "ar": "عطور نسائية"
+    },
+    {
+     "key": "frag-men",
+     "slug": "mens-fragrances",
+     "en": "Men's Fragrances",
+     "ar": "عطور رجالية",
+     "legacy": [
+      "men-fragrances"
+     ]
+    },
+    {
+     "key": "frag-unisex",
+     "slug": "unisex-fragrances",
+     "en": "Unisex Fragrances",
+     "ar": "عطور للجنسين"
+    }
+   ],
+   "tagline_en": "Eaux de parfum and body mists for her, for him and for everyone.",
+   "tagline_ar": "عطور ومعطّرات جسم لها وله وللجميع."
+  },
+  {
+   "key": "women",
+   "slug": "women",
+   "en": "Women",
+   "ar": "النساء",
+   "tagline_en": "The full women’s edit: skincare, makeup, hair, body and fragrance.",
+   "tagline_ar": "كل ما يخص المرأة: عناية بالبشرة ومكياج وشعر وجسم وعطور."
+  },
+  {
+   "key": "men",
+   "slug": "men",
+   "en": "Men",
+   "ar": "الرجال",
+   "children": [
+    {
+     "key": "men-skincare",
+     "slug": "men-skincare",
+     "en": "Men's Skincare",
+     "ar": "العناية ببشرة الرجل",
+     "children": [
+      {
+       "key": "men-facial-cleansers",
+       "slug": "men-facial-cleansers",
+       "en": "Facial Cleansers",
+       "ar": "غسولات الوجه"
+      },
+      {
+       "key": "men-moisturizers",
+       "slug": "men-moisturizers",
+       "en": "Moisturizers",
+       "ar": "المرطبات"
+      }
+     ]
+    },
+    {
+     "key": "men-beard",
+     "slug": "men-beard-care",
+     "en": "Beard Care",
+     "ar": "العناية باللحية"
+    },
+    {
+     "key": "men-shaving",
+     "slug": "men-shaving",
+     "en": "Shaving",
+     "ar": "الحلاقة"
+    },
+    {
+     "key": "men-hair",
+     "slug": "men-hair-care",
+     "en": "Men's Hair Care",
+     "ar": "العناية بشعر الرجل"
+    },
+    {
+     "key": "men-body",
+     "slug": "men-body-care",
+     "en": "Men's Body Care",
+     "ar": "العناية بجسم الرجل",
+     "legacy": [
+      "men-body-wash"
+     ]
+    }
+   ],
+   "tagline_en": "Skincare, beard, shaving and everyday grooming.",
+   "tagline_ar": "عناية بالبشرة واللحية والحلاقة والعناية اليومية."
+  },
+  {
+   "key": "kids",
+   "slug": "kids-babies",
+   "en": "Kids & Babies",
+   "ar": "الأطفال والرضّع",
+   "children": [
+    {
+     "key": "kids-skincare",
+     "slug": "baby-skincare",
+     "en": "Baby Skincare",
+     "ar": "العناية ببشرة الرضّع"
+    },
+    {
+     "key": "kids-cleansers",
+     "slug": "baby-gentle-cleansers",
+     "en": "Gentle Cleansers",
+     "ar": "منظفات لطيفة"
+    },
+    {
+     "key": "kids-shampoo",
+     "slug": "baby-shampoo",
+     "en": "Baby Shampoo",
+     "ar": "شامبو الأطفال"
+    },
+    {
+     "key": "kids-lotion",
+     "slug": "baby-lotion",
+     "en": "Baby Lotion",
+     "ar": "لوشن الأطفال"
+    },
+    {
+     "key": "kids-diaper",
+     "slug": "baby-diaper-care",
+     "en": "Diaper Care",
+     "ar": "العناية بمنطقة الحفاض"
+    },
+    {
+     "key": "kids-personal",
+     "slug": "kids-personal-care",
+     "en": "Kids Personal Care",
+     "ar": "العناية الشخصية للأطفال"
+    }
+   ],
+   "tagline_en": "Gentle everyday care for little ones.",
+   "tagline_ar": "عناية يومية لطيفة للصغار."
+  }
+ ],
+ "brands": {
+  "lumiere": {
+   "en": "Lumière Botanica",
+   "ar": "لوميير بوتانيكا",
+   "color": "#c98f8a"
+  },
+  "dune": {
+   "en": "Maison Dune",
+   "ar": "ميزون ديون",
+   "color": "#7a3b47"
+  },
+  "saffron": {
+   "en": "Silk & Saffron",
+   "ar": "سيلك آند سافرون",
+   "color": "#b8864b"
+  },
+  "atlas": {
+   "en": "Atlas Grooming",
+   "ar": "أطلس غرومينغ",
+   "color": "#3d4a4f"
+  },
+  "nuage": {
+   "en": "Petit Nuage",
+   "ar": "بوتي نواج",
+   "color": "#8fb3c9"
+  },
+  "essentials": {
+   "en": "Nexora Essentials",
+   "ar": "نيكسورا إسنشالز",
+   "color": "#5b3a2e"
+  }
+ },
+ "select_options": {
+  "nx_skin_type": {
+   "all-skin": {
+    "en": "All skin types",
+    "ar": "جميع أنواع البشرة"
+   },
+   "dry": {
+    "en": "Dry skin",
+    "ar": "البشرة الجافة"
+   },
+   "oily": {
+    "en": "Oily skin",
+    "ar": "البشرة الدهنية"
+   },
+   "combination": {
+    "en": "Combination skin",
+    "ar": "البشرة المختلطة"
+   },
+   "sensitive": {
+    "en": "Sensitive skin",
+    "ar": "البشرة الحساسة"
+   },
+   "all-hair": {
+    "en": "All hair types",
+    "ar": "جميع أنواع الشعر"
+   },
+   "dry-hair": {
+    "en": "Dry & damaged hair",
+    "ar": "الشعر الجاف والمتضرر"
+   }
+  },
+  "nx_age_group": {
+   "adults": {
+    "en": "Adults",
+    "ar": "البالغون"
+   },
+   "babies": {
+    "en": "Babies (0+ months)",
+    "ar": "الرضّع (من الولادة)"
+   },
+   "kids": {
+    "en": "Kids (3+ years)",
+    "ar": "الأطفال (3 سنوات فأكثر)"
+   }
+  }
+ },
+ "products": [
+  {
+   "sku": "NXB-W-001",
+   "slug": "rose-cloud-gentle-gel-cleanser",
+   "audience": "women",
+   "categories": [
+    "skincare-cleansers",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "pump",
+   "tone": "#f3d9d6",
+   "en": "Rose Cloud Gentle Gel Cleanser",
+   "ar": "غسول الجل اللطيف روز كلاود",
+   "short_en": "A soft-foaming gel cleanser that lifts away the day without leaving skin feeling tight.",
+   "short_ar": "غسول جل برغوة ناعمة يزيل آثار اليوم دون أن يترك البشرة مشدودة.",
+   "price": 59,
+   "special": null,
+   "size": "150 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, coco-glucoside, rose water, aloe vera leaf juice, panthenol (demo listing).",
+   "ing_ar": "ماء، جلسرين، كوكو غلوكوسايد، ماء الورد، عصارة أوراق الصبار، بانثينول (قائمة توضيحية).",
+   "use_en": "Massage a small amount onto damp skin morning and evening, then rinse with lukewarm water.",
+   "use_ar": "دلّكي كمية صغيرة على بشرة رطبة صباحًا ومساءً ثم اشطفي بماء فاتر."
+  },
+  {
+   "sku": "NXB-W-002",
+   "slug": "hydra-calm-balancing-toner",
+   "audience": "women",
+   "categories": [
+    "skincare-toners",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "bottle",
+   "tone": "#e8eef0",
+   "en": "Hydra Calm Balancing Toner",
+   "ar": "تونر هيدرا كالم المتوازن",
+   "short_en": "An alcohol-free watery toner that refreshes skin and preps it for serum.",
+   "short_ar": "تونر مائي خالٍ من الكحول ينعش البشرة ويهيئها للسيروم.",
+   "price": 65,
+   "special": null,
+   "size": "200 ml",
+   "skin": "combination",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, butylene glycol, cucumber extract, green tea extract, niacinamide (demo listing).",
+   "ing_ar": "ماء، بيوتيلين غلايكول، مستخلص الخيار، مستخلص الشاي الأخضر، نياسيناميد (قائمة توضيحية).",
+   "use_en": "After cleansing, sweep over face with a cotton pad or press in with clean hands.",
+   "use_ar": "بعد التنظيف، مرّريه على الوجه بقطنة أو اضغطيه بيدين نظيفتين."
+  },
+  {
+   "sku": "NXB-W-003",
+   "slug": "glow-ritual-vitamin-c-serum",
+   "audience": "women",
+   "categories": [
+    "skincare-serums",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "dropper",
+   "tone": "#f6dcb8",
+   "en": "Glow Ritual Vitamin C Serum",
+   "ar": "سيروم غلو ريتشوال بفيتامين C",
+   "short_en": "A lightweight daily serum with a vitamin C derivative for a fresh, radiant-looking complexion.",
+   "short_ar": "سيروم يومي خفيف بمشتق فيتامين C لبشرة تبدو أكثر إشراقًا ونضارة.",
+   "price": 129,
+   "special": 109,
+   "size": "30 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Aqua, ascorbyl glucoside, glycerin, sodium hyaluronate, orange peel extract (demo listing).",
+   "ing_ar": "ماء، أسكوربيل غلوكوسايد، جلسرين، هيالورونات الصوديوم، مستخلص قشر البرتقال (قائمة توضيحية).",
+   "use_en": "Apply 3–4 drops to clean skin in the morning, followed by moisturizer and sunscreen.",
+   "use_ar": "ضعي 3–4 قطرات على بشرة نظيفة صباحًا، ثم المرطب وواقي الشمس."
+  },
+  {
+   "sku": "NXB-W-004",
+   "slug": "hyaluronic-dew-hydrating-serum",
+   "audience": "women",
+   "categories": [
+    "skincare-serums",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "dropper",
+   "tone": "#dfe9f3",
+   "en": "Hyaluronic Dew Hydrating Serum",
+   "ar": "سيروم هيالورونيك ديو المرطّب",
+   "short_en": "A water-light serum that layers easily under moisturizer for a plump, dewy feel.",
+   "short_ar": "سيروم خفيف كالماء يُطبّق بسهولة تحت المرطب لإحساس بالامتلاء والنضارة.",
+   "price": 119,
+   "special": null,
+   "size": "30 ml",
+   "skin": "dry",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, sodium hyaluronate, glycerin, panthenol, allantoin (demo listing).",
+   "ing_ar": "ماء، هيالورونات الصوديوم، جلسرين، بانثينول، ألانتوين (قائمة توضيحية).",
+   "use_en": "Press a few drops into slightly damp skin morning and night before moisturizer.",
+   "use_ar": "اضغطي بضع قطرات على بشرة رطبة قليلًا صباحًا ومساءً قبل المرطب."
+  },
+  {
+   "sku": "NXB-W-005",
+   "slug": "velvet-barrier-daily-moisturizer",
+   "audience": "women",
+   "categories": [
+    "skincare-moisturizers",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "jar",
+   "tone": "#f1e4d6",
+   "en": "Velvet Barrier Daily Moisturizer",
+   "ar": "مرطّب فيلفت بارير اليومي",
+   "short_en": "A rich-yet-light cream that leaves skin soft, comfortable and smooth all day.",
+   "short_ar": "كريم غني بقوام خفيف يترك البشرة ناعمة ومريحة طوال اليوم.",
+   "price": 99,
+   "special": null,
+   "size": "50 ml",
+   "skin": "dry",
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, shea butter, squalane, ceramide NP, glycerin, tocopherol (demo listing).",
+   "ing_ar": "ماء، زبدة الشيا، سكوالين، سيراميد NP، جلسرين، توكوفيرول (قائمة توضيحية).",
+   "use_en": "Smooth over face and neck as the last step of your morning and evening routine.",
+   "use_ar": "وزّعيه على الوجه والرقبة كخطوة أخيرة في روتين الصباح والمساء."
+  },
+  {
+   "sku": "NXB-W-006",
+   "slug": "daylight-veil-sun-fluid",
+   "audience": "women",
+   "categories": [
+    "skincare-sunscreen",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "tube",
+   "tone": "#fbe7c6",
+   "en": "Daylight Veil Sun Fluid",
+   "ar": "فلويد الحماية من الشمس دايلايت فيل",
+   "short_en": "A sheer, non-greasy daily sun fluid concept designed to sit comfortably under makeup.",
+   "short_ar": "فكرة فلويد يومي للشمس بقوام شفاف وغير دهني يناسب الاستخدام تحت المكياج.",
+   "price": 89,
+   "special": null,
+   "size": "50 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Demo listing only — the protection factor and UV filters of a real sunscreen must be read from its official label.",
+   "ing_ar": "قائمة توضيحية فقط — يجب قراءة معامل الحماية وفلاتر الأشعة لأي واقٍ حقيقي من ملصقه الرسمي.",
+   "use_en": "Apply generously as the last skincare step and reapply as directed on the real product label.",
+   "use_ar": "يوضع بكمية وافرة كآخر خطوة عناية، ويعاد وضعه حسب تعليمات ملصق المنتج الحقيقي."
+  },
+  {
+   "sku": "NXB-W-007",
+   "slug": "pink-clay-purifying-mask",
+   "audience": "women",
+   "categories": [
+    "skincare-masks",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "jar",
+   "tone": "#efc9c4",
+   "en": "Pink Clay Purifying Mask",
+   "ar": "ماسك الطين الوردي المنقّي",
+   "short_en": "A creamy pink clay mask for a weekly reset that leaves skin feeling clean and soft.",
+   "short_ar": "ماسك كريمي بالطين الوردي لجلسة أسبوعية تترك البشرة نظيفة وناعمة.",
+   "price": 79,
+   "special": 65,
+   "size": "75 ml",
+   "skin": "oily",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Kaolin, aqua, glycerin, rose clay, rosehip oil (demo listing).",
+   "ing_ar": "كاولين، ماء، جلسرين، طين وردي، زيت ثمر الورد (قائمة توضيحية).",
+   "use_en": "Apply an even layer to clean skin, leave for 10 minutes, then rinse. Use 1–2 times a week.",
+   "use_ar": "ضعي طبقة متساوية على بشرة نظيفة واتركيها 10 دقائق ثم اشطفي. مرة أو مرتين أسبوعيًا."
+  },
+  {
+   "sku": "NXB-W-008",
+   "slug": "soft-polish-rice-exfoliator",
+   "audience": "women",
+   "categories": [
+    "skincare-exfoliators",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "tube",
+   "tone": "#f4eee4",
+   "en": "Soft Polish Rice Exfoliator",
+   "ar": "مقشّر الأرز سوفت بوليش",
+   "short_en": "A gentle rice-powder polish for smoother-feeling skin, made for a calm weekly ritual.",
+   "short_ar": "مقشّر لطيف ببودرة الأرز لبشرة أنعم ملمسًا ضمن طقس أسبوعي هادئ.",
+   "price": 69,
+   "special": null,
+   "size": "100 ml",
+   "skin": "sensitive",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, oryza sativa (rice) powder, glycerin, oat extract (demo listing).",
+   "ing_ar": "ماء، بودرة الأرز، جلسرين، مستخلص الشوفان (قائمة توضيحية).",
+   "use_en": "Massage gently onto damp skin in circular motions, avoiding the eye area, then rinse.",
+   "use_ar": "دلّكيه برفق بحركات دائرية على بشرة رطبة مع تجنّب محيط العين ثم اشطفي."
+  },
+  {
+   "sku": "NXB-W-009",
+   "slug": "second-skin-fluid-foundation",
+   "audience": "women",
+   "categories": [
+    "makeup-face",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "pump",
+   "tone": "#e2b996",
+   "en": "Second Skin Fluid Foundation — Warm Beige",
+   "ar": "كريم أساس سكند سكين السائل — بيج دافئ",
+   "short_en": "A buildable, natural-finish foundation that feels light on skin. Shade: Warm Beige 03.",
+   "short_ar": "كريم أساس قابل للبناء بلمسة طبيعية وإحساس خفيف على البشرة. الدرجة: بيج دافئ 03.",
+   "price": 139,
+   "special": null,
+   "size": "30 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, cyclopentasiloxane, glycerin, iron oxides, titanium dioxide (demo listing).",
+   "ing_ar": "ماء، سايكلوبنتاسيلوكسان، جلسرين، أكاسيد الحديد، ثاني أكسيد التيتانيوم (قائمة توضيحية).",
+   "use_en": "Dot onto the face and blend outwards with a brush or damp sponge; build where needed.",
+   "use_ar": "ضعيه بنقاط على الوجه ثم وزّعيه للخارج بفرشاة أو إسفنجة رطبة، وابني التغطية حسب الحاجة."
+  },
+  {
+   "sku": "NXB-W-010",
+   "slug": "bright-eyes-creamy-concealer",
+   "audience": "women",
+   "categories": [
+    "makeup-face",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "wand",
+   "tone": "#ecc8a8",
+   "en": "Bright Eyes Creamy Concealer",
+   "ar": "كونسيلر برايت آيز الكريمي",
+   "short_en": "A creamy, blendable concealer for a fresh look under the eyes and around the face.",
+   "short_ar": "كونسيلر كريمي سهل الدمج لمظهر منتعش تحت العينين وحول الوجه.",
+   "price": 79,
+   "special": null,
+   "size": "6 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, dimethicone, glycerin, iron oxides, titanium dioxide (demo listing).",
+   "ing_ar": "ماء، ديميثيكون، جلسرين، أكاسيد الحديد، ثاني أكسيد التيتانيوم (قائمة توضيحية).",
+   "use_en": "Apply a little where needed and tap gently with a fingertip to blend.",
+   "use_ar": "ضعي كمية قليلة حيث تحتاجين ثم اطرقي برفق بطرف الإصبع للدمج."
+  },
+  {
+   "sku": "NXB-W-011",
+   "slug": "velvet-kiss-matte-lipstick-burgundy",
+   "audience": "women",
+   "categories": [
+    "makeup-lips",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "lipstick",
+   "tone": "#7a2636",
+   "en": "Velvet Kiss Matte Lipstick — Burgundy",
+   "ar": "أحمر شفاه فيلفت كيس المطفي — عنابي",
+   "short_en": "A soft-matte lipstick with rich colour payoff in a deep burgundy shade.",
+   "short_ar": "أحمر شفاه بلمسة مطفية ناعمة ولون غني بدرجة عنابية عميقة.",
+   "price": 69,
+   "special": 55,
+   "size": "3.5 g",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Isododecane, candelilla wax, castor seed oil, pigments (demo listing).",
+   "ing_ar": "إيزودوديكان، شمع الكانديليلا، زيت الخروع، أصباغ (قائمة توضيحية).",
+   "use_en": "Apply directly from the bullet, starting at the centre of the lips and working outwards.",
+   "use_ar": "ضعيه مباشرة بدءًا من منتصف الشفاه نحو الأطراف."
+  },
+  {
+   "sku": "NXB-W-012",
+   "slug": "nourish-tinted-lip-oil-blush",
+   "audience": "women",
+   "categories": [
+    "makeup-lips",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "wand",
+   "tone": "#e6a5a5",
+   "en": "Nourish Tinted Lip Oil — Blush",
+   "ar": "زيت الشفاه الملوّن نوريش — بلاش",
+   "short_en": "A glossy, non-sticky lip oil with a sheer blush tint for an effortless everyday look.",
+   "short_ar": "زيت شفاه لامع وغير لزج بلون وردي شفاف لإطلالة يومية سهلة.",
+   "price": 59,
+   "special": null,
+   "size": "5 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Jojoba seed oil, squalane, sunflower seed oil, pigments, flavour (demo listing).",
+   "ing_ar": "زيت الجوجوبا، سكوالين، زيت دوار الشمس، أصباغ، نكهة (قائمة توضيحية).",
+   "use_en": "Glide over bare lips or on top of lipstick for extra shine.",
+   "use_ar": "مرّريه على الشفاه مباشرة أو فوق أحمر الشفاه لمزيد من اللمعان."
+  },
+  {
+   "sku": "NXB-W-013",
+   "slug": "lash-lift-volume-mascara",
+   "audience": "women",
+   "categories": [
+    "makeup-eyes",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "wand",
+   "tone": "#2b2326",
+   "en": "Lash Lift Volume Mascara",
+   "ar": "ماسكارا لاش ليفت للكثافة",
+   "short_en": "A buildable black mascara that defines and lifts lashes without clumping.",
+   "short_ar": "ماسكارا سوداء قابلة للبناء تحدد الرموش وترفعها دون تكتل.",
+   "price": 75,
+   "special": null,
+   "size": "10 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, beeswax, carnauba wax, iron oxides (demo listing).",
+   "ing_ar": "ماء، شمع العسل، شمع الكرنوبا، أكاسيد الحديد (قائمة توضيحية).",
+   "use_en": "Wiggle the brush from root to tip; add a second coat while still wet.",
+   "use_ar": "حرّكي الفرشاة من الجذور إلى الأطراف، وأضيفي طبقة ثانية قبل أن تجف الأولى."
+  },
+  {
+   "sku": "NXB-W-014",
+   "slug": "desert-nudes-eyeshadow-palette",
+   "audience": "women",
+   "categories": [
+    "makeup-eyes",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "palette",
+   "tone": "#c99a7a",
+   "en": "Desert Nudes Eyeshadow Palette",
+   "ar": "باليت ظلال العيون ديزرت نودز",
+   "short_en": "Nine warm neutrals in matte and shimmer finishes for day-to-night looks.",
+   "short_ar": "تسع درجات محايدة دافئة بلمسات مطفية ولامعة لإطلالات النهار والمساء.",
+   "price": 149,
+   "special": 125,
+   "size": "9 × 1.2 g",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Talc, mica, magnesium stearate, iron oxides (demo listing).",
+   "ing_ar": "تلك، ميكا، ستيرات المغنيسيوم، أكاسيد الحديد (قائمة توضيحية).",
+   "use_en": "Sweep lighter shades across the lid and deepen the crease with darker tones.",
+   "use_ar": "وزّعي الدرجات الفاتحة على الجفن وعمّقي طيّة العين بالدرجات الداكنة."
+  },
+  {
+   "sku": "NXB-W-015",
+   "slug": "silk-repair-argan-shampoo",
+   "audience": "women",
+   "categories": [
+    "hair-shampoo",
+    "women"
+   ],
+   "brand": "saffron",
+   "shape": "bottle",
+   "tone": "#e9cfa4",
+   "en": "Silk Repair Argan Shampoo",
+   "ar": "شامبو سيلك ريبير بزيت الأرغان",
+   "short_en": "A gentle cleansing shampoo with argan oil that leaves hair soft, shiny and easy to style.",
+   "short_ar": "شامبو منظف لطيف بزيت الأرغان يترك الشعر ناعمًا ولامعًا وسهل التصفيف.",
+   "price": 69,
+   "special": null,
+   "size": "300 ml",
+   "skin": "dry-hair",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, sodium cocoyl isethionate, argan kernel oil, panthenol, hydrolysed silk (demo listing).",
+   "ing_ar": "ماء، صوديوم كوكويل إيزيثيونات، زيت الأرغان، بانثينول، حرير متحلل (قائمة توضيحية).",
+   "use_en": "Massage into wet hair and scalp, rinse thoroughly and follow with the hair mask.",
+   "use_ar": "دلّكيه على الشعر وفروة الرأس المبللين، اشطفيه جيدًا ثم استخدمي ماسك الشعر."
+  },
+  {
+   "sku": "NXB-W-016",
+   "slug": "silk-repair-hair-mask",
+   "audience": "women",
+   "categories": [
+    "hair-masks",
+    "women"
+   ],
+   "brand": "saffron",
+   "shape": "jar",
+   "tone": "#d9b98a",
+   "en": "Silk Repair Hair Mask",
+   "ar": "ماسك الشعر سيلك ريبير",
+   "short_en": "A creamy weekly mask that wraps dry lengths in softness and shine.",
+   "short_ar": "ماسك كريمي أسبوعي يمنح أطراف الشعر الجافة نعومة ولمعانًا.",
+   "price": 85,
+   "special": null,
+   "size": "200 ml",
+   "skin": "dry-hair",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, cetearyl alcohol, shea butter, argan kernel oil, keratin amino acids (demo listing).",
+   "ing_ar": "ماء، كحول سيتيريل، زبدة الشيا، زيت الأرغان، أحماض أمينية من الكيراتين (قائمة توضيحية).",
+   "use_en": "Apply to towel-dried lengths, leave for 5–10 minutes, then rinse well.",
+   "use_ar": "ضعيه على الشعر بعد تجفيفه بالمنشفة، اتركيه 5–10 دقائق ثم اشطفيه جيدًا."
+  },
+  {
+   "sku": "NXB-W-017",
+   "slug": "shea-cloud-body-butter",
+   "audience": "women",
+   "categories": [
+    "body-lotion",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "jar",
+   "tone": "#f2e3cf",
+   "en": "Shea Cloud Body Butter",
+   "ar": "زبدة الجسم شيا كلاود",
+   "short_en": "A whipped body butter with shea and vanilla that melts into skin for lasting softness.",
+   "short_ar": "زبدة جسم مخفوقة بالشيا والفانيليا تذوب في البشرة لنعومة تدوم.",
+   "price": 79,
+   "special": 69,
+   "size": "200 ml",
+   "skin": "dry",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Shea butter, aqua, cocoa seed butter, glycerin, vanilla extract (demo listing).",
+   "ing_ar": "زبدة الشيا، ماء، زبدة الكاكاو، جلسرين، مستخلص الفانيليا (قائمة توضيحية).",
+   "use_en": "Massage over the body after showering, focusing on elbows and knees.",
+   "use_ar": "دلّكيها على الجسم بعد الاستحمام مع التركيز على المرفقين والركبتين."
+  },
+  {
+   "sku": "NXB-W-018",
+   "slug": "orange-blossom-body-wash",
+   "audience": "women",
+   "categories": [
+    "body-wash",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "pump",
+   "tone": "#f7dcc1",
+   "en": "Orange Blossom Silky Body Wash",
+   "ar": "غسول الجسم الحريري بزهر البرتقال",
+   "short_en": "A silky, low-foam body wash with a soft orange blossom scent.",
+   "short_ar": "غسول جسم حريري برغوة خفيفة ورائحة زهر البرتقال الناعمة.",
+   "price": 55,
+   "special": null,
+   "size": "250 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, sodium lauroyl sarcosinate, glycerin, orange flower water, parfum (demo listing).",
+   "ing_ar": "ماء، صوديوم لورويل ساركوسينات، جلسرين، ماء زهر البرتقال، عطر (قائمة توضيحية).",
+   "use_en": "Lather on wet skin with hands or a pouf, then rinse.",
+   "use_ar": "يُرغّى على بشرة مبللة باليدين أو بالليفة ثم يُشطف."
+  },
+  {
+   "sku": "NXB-W-019",
+   "slug": "blush-peony-eau-de-parfum",
+   "audience": "women",
+   "categories": [
+    "frag-women",
+    "women"
+   ],
+   "brand": "essentials",
+   "shape": "perfume",
+   "tone": "#e9b8b8",
+   "en": "Blush Peony Eau de Parfum",
+   "ar": "عطر بلاش بيوني أو دو بارفان",
+   "short_en": "A luminous floral scent of peony, pink pepper and soft musk.",
+   "short_ar": "عطر زهري مشرق بنفحات الفاوانيا والفلفل الوردي والمسك الناعم.",
+   "price": 249,
+   "special": null,
+   "size": "50 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Alcohol denat., parfum, aqua (demo listing). Notes: peony, pink pepper, musk.",
+   "ing_ar": "كحول، عطر، ماء (قائمة توضيحية). النفحات: فاوانيا، فلفل وردي، مسك.",
+   "use_en": "Spray onto pulse points from about 15 cm away.",
+   "use_ar": "يُرش على نقاط النبض من مسافة 15 سم تقريبًا."
+  },
+  {
+   "sku": "NXB-M-001",
+   "slug": "charcoal-daily-face-wash",
+   "audience": "men",
+   "categories": [
+    "men-facial-cleansers"
+   ],
+   "brand": "atlas",
+   "shape": "tube",
+   "tone": "#3a3f44",
+   "en": "Charcoal Daily Face Wash",
+   "ar": "غسول الوجه اليومي بالفحم",
+   "short_en": "A refreshing daily gel wash with charcoal powder for a clean, matte-feeling face.",
+   "short_ar": "غسول جل يومي منعش ببودرة الفحم لوجه نظيف بإحساس غير لامع.",
+   "price": 55,
+   "special": null,
+   "size": "150 ml",
+   "skin": "oily",
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, cocamidopropyl betaine, glycerin, charcoal powder, menthol (demo listing).",
+   "ing_ar": "ماء، كوكاميدوبروبيل بيتين، جلسرين، بودرة الفحم، منثول (قائمة توضيحية).",
+   "use_en": "Work into a lather on wet skin, massage for 30 seconds and rinse.",
+   "use_ar": "اصنع رغوة على بشرة مبللة، دلّك 30 ثانية ثم اشطف."
+  },
+  {
+   "sku": "NXB-M-002",
+   "slug": "matte-hydrate-face-moisturizer",
+   "audience": "men",
+   "categories": [
+    "men-moisturizers"
+   ],
+   "brand": "atlas",
+   "shape": "pump",
+   "tone": "#6b7a80",
+   "en": "Matte Hydrate Face Moisturizer",
+   "ar": "مرطّب الوجه مات هيدريت",
+   "short_en": "A fast-absorbing, oil-free gel cream that hydrates without shine.",
+   "short_ar": "كريم جل سريع الامتصاص وخالٍ من الزيوت يرطب دون لمعان.",
+   "price": 85,
+   "special": 72,
+   "size": "75 ml",
+   "skin": "combination",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Aqua, glycerin, niacinamide, silica, aloe vera leaf juice (demo listing).",
+   "ing_ar": "ماء، جلسرين، نياسيناميد، سيليكا، عصارة أوراق الصبار (قائمة توضيحية).",
+   "use_en": "Apply to face and neck after cleansing or shaving.",
+   "use_ar": "يوضع على الوجه والرقبة بعد التنظيف أو الحلاقة."
+  },
+  {
+   "sku": "NXB-M-003",
+   "slug": "cedar-beard-oil",
+   "audience": "men",
+   "categories": [
+    "men-beard"
+   ],
+   "brand": "atlas",
+   "shape": "dropper",
+   "tone": "#8a5a36",
+   "en": "Cedar Beard Oil",
+   "ar": "زيت اللحية بالأرز",
+   "short_en": "A lightweight conditioning oil that softens the beard and leaves a subtle cedar scent.",
+   "short_ar": "زيت خفيف ينعّم اللحية ويترك رائحة أرز هادئة.",
+   "price": 69,
+   "special": null,
+   "size": "30 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Jojoba seed oil, argan kernel oil, cedarwood oil, tocopherol (demo listing).",
+   "ing_ar": "زيت الجوجوبا، زيت الأرغان، زيت خشب الأرز، توكوفيرول (قائمة توضيحية).",
+   "use_en": "Warm 3–5 drops between palms and work through the beard down to the skin.",
+   "use_ar": "دفّئ 3–5 قطرات بين الكفين ووزّعها في اللحية حتى الجلد."
+  },
+  {
+   "sku": "NXB-M-004",
+   "slug": "soft-hold-beard-balm",
+   "audience": "men",
+   "categories": [
+    "men-beard"
+   ],
+   "brand": "atlas",
+   "shape": "tin",
+   "tone": "#a07a52",
+   "en": "Soft Hold Beard Balm",
+   "ar": "بلسم اللحية سوفت هولد",
+   "short_en": "A shaping balm that tames flyaways and keeps the beard looking neat.",
+   "short_ar": "بلسم تشكيل يروّض الشعيرات المتطايرة ويحافظ على مظهر مرتب للحية.",
+   "price": 65,
+   "special": null,
+   "size": "60 g",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Shea butter, beeswax, coconut oil, cedarwood oil (demo listing).",
+   "ing_ar": "زبدة الشيا، شمع العسل، زيت جوز الهند، زيت خشب الأرز (قائمة توضيحية).",
+   "use_en": "Scoop a small amount, warm in palms and shape the beard with fingers or a comb.",
+   "use_ar": "خذ كمية صغيرة، دفّئها بين الكفين وشكّل اللحية بالأصابع أو المشط."
+  },
+  {
+   "sku": "NXB-M-005",
+   "slug": "smooth-glide-shaving-gel",
+   "audience": "men",
+   "categories": [
+    "men-shaving"
+   ],
+   "brand": "atlas",
+   "shape": "tube",
+   "tone": "#4c6a7a",
+   "en": "Smooth Glide Shaving Gel",
+   "ar": "جل الحلاقة سموث غلايد",
+   "short_en": "A clear, cushioning gel that lets you see your lines for a precise, comfortable shave.",
+   "short_ar": "جل شفاف يمنح طبقة واقية ويتيح رؤية الخطوط لحلاقة دقيقة ومريحة.",
+   "price": 45,
+   "special": null,
+   "size": "200 ml",
+   "skin": "sensitive",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, aloe vera leaf juice, allantoin, carbomer (demo listing).",
+   "ing_ar": "ماء، جلسرين، عصارة أوراق الصبار، ألانتوين، كاربومير (قائمة توضيحية).",
+   "use_en": "Apply a thin layer to damp stubble and shave in the direction of hair growth.",
+   "use_ar": "ضع طبقة رقيقة على الذقن الرطب واحلق باتجاه نمو الشعر."
+  },
+  {
+   "sku": "NXB-M-006",
+   "slug": "cool-calm-after-shave-balm",
+   "audience": "men",
+   "categories": [
+    "men-shaving"
+   ],
+   "brand": "atlas",
+   "shape": "bottle",
+   "tone": "#9fb4ba",
+   "en": "Cool Calm After-Shave Balm",
+   "ar": "بلسم ما بعد الحلاقة كول كالم",
+   "short_en": "An alcohol-free balm that leaves freshly shaved skin feeling cool and comfortable.",
+   "short_ar": "بلسم خالٍ من الكحول يترك البشرة بعد الحلاقة منتعشة ومريحة.",
+   "price": 59,
+   "special": 49,
+   "size": "100 ml",
+   "skin": "sensitive",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Aqua, glycerin, panthenol, bisabolol, cucumber extract (demo listing).",
+   "ing_ar": "ماء، جلسرين، بانثينول، بيسابولول، مستخلص الخيار (قائمة توضيحية).",
+   "use_en": "Smooth a small amount over face and neck after shaving.",
+   "use_ar": "وزّع كمية صغيرة على الوجه والرقبة بعد الحلاقة."
+  },
+  {
+   "sku": "NXB-M-007",
+   "slug": "matte-clay-styling-paste",
+   "audience": "men",
+   "categories": [
+    "men-hair",
+    "hair-styling"
+   ],
+   "brand": "atlas",
+   "shape": "tin",
+   "tone": "#5a4a3c",
+   "en": "Matte Clay Styling Paste",
+   "ar": "معجون تصفيف الشعر بالطين المطفي",
+   "short_en": "A medium-hold clay paste for textured, natural-looking styles with a matte finish.",
+   "short_ar": "معجون طين بثبات متوسط لتسريحات بمظهر طبيعي ولمسة مطفية.",
+   "price": 59,
+   "special": null,
+   "size": "80 g",
+   "skin": "all-hair",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, kaolin, beeswax, glycerin, parfum (demo listing).",
+   "ing_ar": "ماء، كاولين، شمع العسل، جلسرين، عطر (قائمة توضيحية).",
+   "use_en": "Rub a small amount between fingers and work through dry or towel-dried hair.",
+   "use_ar": "افرك كمية صغيرة بين الأصابع ووزّعها على شعر جاف أو مجفف بالمنشفة."
+  },
+  {
+   "sku": "NXB-M-008",
+   "slug": "daily-strength-mens-shampoo",
+   "audience": "men",
+   "categories": [
+    "men-hair"
+   ],
+   "brand": "atlas",
+   "shape": "bottle",
+   "tone": "#2f3b45",
+   "en": "Daily Strength Men's Shampoo",
+   "ar": "شامبو الرجال اليومي ديلي سترينغث",
+   "short_en": "An invigorating everyday shampoo with peppermint for a fresh, clean scalp feel.",
+   "short_ar": "شامبو يومي منعش بالنعناع لإحساس بفروة رأس نظيفة ومنتعشة.",
+   "price": 55,
+   "special": null,
+   "size": "300 ml",
+   "skin": "all-hair",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, sodium laureth sulfate, cocamidopropyl betaine, peppermint oil, caffeine (demo listing).",
+   "ing_ar": "ماء، صوديوم لوريث سلفات، كوكاميدوبروبيل بيتين، زيت النعناع، كافيين (قائمة توضيحية).",
+   "use_en": "Lather into wet hair, massage the scalp and rinse.",
+   "use_ar": "اصنع رغوة على الشعر المبلل ودلّك فروة الرأس ثم اشطف."
+  },
+  {
+   "sku": "NXB-M-009",
+   "slug": "sport-fresh-3in1-body-wash",
+   "audience": "men",
+   "categories": [
+    "men-body",
+    "body-wash"
+   ],
+   "brand": "atlas",
+   "shape": "bottle",
+   "tone": "#3e6f8a",
+   "en": "Sport Fresh 3-in-1 Body Wash",
+   "ar": "غسول سبورت فريش 3 في 1",
+   "short_en": "One bottle for body, hair and face — a crisp, energising wash for after the gym.",
+   "short_ar": "عبوة واحدة للجسم والشعر والوجه — غسول منعش ومنشّط بعد الرياضة.",
+   "price": 49,
+   "special": 39,
+   "size": "400 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Aqua, sodium laureth sulfate, glycerin, sea salt, citrus extract (demo listing).",
+   "ing_ar": "ماء، صوديوم لوريث سلفات، جلسرين، ملح البحر، مستخلص الحمضيات (قائمة توضيحية).",
+   "use_en": "Lather over wet body, hair and face, then rinse thoroughly.",
+   "use_ar": "اصنع رغوة على الجسم والشعر والوجه المبللين ثم اشطف جيدًا."
+  },
+  {
+   "sku": "NXB-M-010",
+   "slug": "dry-fresh-roll-on-deodorant",
+   "audience": "men",
+   "categories": [
+    "men-body"
+   ],
+   "brand": "atlas",
+   "shape": "rollon",
+   "tone": "#d7dde0",
+   "en": "Dry Fresh Roll-On Deodorant",
+   "ar": "مزيل العرق رول أون دراي فريش",
+   "short_en": "A clean, woody roll-on deodorant that dries quickly and keeps you feeling fresh.",
+   "short_ar": "مزيل عرق رول أون برائحة خشبية نظيفة يجف بسرعة ويمنح إحساسًا بالانتعاش.",
+   "price": 35,
+   "special": null,
+   "size": "50 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, propylene glycol, triethyl citrate, parfum (demo listing).",
+   "ing_ar": "ماء، بروبيلين غلايكول، ترايثيل سترات، عطر (قائمة توضيحية).",
+   "use_en": "Apply to clean, dry underarms and allow to dry before dressing.",
+   "use_ar": "يوضع على إبط نظيف وجاف ويترك ليجف قبل ارتداء الملابس."
+  },
+  {
+   "sku": "NXB-M-011",
+   "slug": "atlas-vetiver-eau-de-parfum",
+   "audience": "men",
+   "categories": [
+    "frag-men",
+    "men"
+   ],
+   "brand": "essentials",
+   "shape": "perfume",
+   "tone": "#5f5a3f",
+   "en": "Atlas Vetiver Eau de Parfum",
+   "ar": "عطر أطلس فيتيفر أو دو بارفان",
+   "short_en": "A refined woody scent of vetiver, bergamot and cedar for every day.",
+   "short_ar": "عطر خشبي راقٍ بنفحات نجيل الهند والبرغموت والأرز للاستخدام اليومي.",
+   "price": 269,
+   "special": 229,
+   "size": "100 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Alcohol denat., parfum, aqua (demo listing). Notes: bergamot, vetiver, cedar.",
+   "ing_ar": "كحول، عطر، ماء (قائمة توضيحية). النفحات: برغموت، نجيل الهند، أرز.",
+   "use_en": "Spray on neck and wrists from about 15 cm away.",
+   "use_ar": "يُرش على الرقبة والمعصمين من مسافة 15 سم تقريبًا."
+  },
+  {
+   "sku": "NXB-K-001",
+   "slug": "tiny-bubbles-gentle-baby-wash",
+   "audience": "kids",
+   "categories": [
+    "kids-cleansers"
+   ],
+   "brand": "nuage",
+   "shape": "pump",
+   "tone": "#d6e7f0",
+   "en": "Tiny Bubbles Gentle Baby Wash",
+   "ar": "غسول الرضّع اللطيف تايني بابلز",
+   "short_en": "A mild, softly fragranced wash for baby's daily bath time.",
+   "short_ar": "غسول معتدل برائحة خفيفة لحمّام الطفل اليومي.",
+   "price": 45,
+   "special": null,
+   "size": "250 ml",
+   "skin": "sensitive",
+   "age": "babies",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, coco-glucoside, glycerin, oat extract, chamomile extract (demo listing).",
+   "ing_ar": "ماء، كوكو غلوكوسايد، جلسرين، مستخلص الشوفان، مستخلص البابونج (قائمة توضيحية).",
+   "use_en": "Add a small amount to wet skin or a soft cloth, wash gently and rinse. Keep out of eyes; adult supervision always.",
+   "use_ar": "ضعي كمية صغيرة على البشرة المبللة أو قطعة قماش ناعمة، اغسلي برفق ثم اشطفي. تجنّبي العينين وتحت إشراف شخص بالغ دائمًا."
+  },
+  {
+   "sku": "NXB-K-002",
+   "slug": "mild-baby-shampoo",
+   "audience": "kids",
+   "categories": [
+    "kids-shampoo"
+   ],
+   "brand": "nuage",
+   "shape": "bottle",
+   "tone": "#f4e6b8",
+   "en": "Petit Nuage Mild Baby Shampoo",
+   "ar": "شامبو الأطفال المعتدل بوتي نواج",
+   "short_en": "A gentle shampoo that cleans fine baby hair and rinses away easily.",
+   "short_ar": "شامبو لطيف ينظف شعر الطفل الناعم ويُشطف بسهولة.",
+   "price": 42,
+   "special": null,
+   "size": "250 ml",
+   "skin": "all-hair",
+   "age": "babies",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, decyl glucoside, glycerin, calendula extract (demo listing).",
+   "ing_ar": "ماء، ديسيل غلوكوسايد، جلسرين، مستخلص الآذريون (قائمة توضيحية).",
+   "use_en": "Massage a small amount into wet hair and rinse well, shielding the eyes.",
+   "use_ar": "دلّكي كمية صغيرة في الشعر المبلل واشطفي جيدًا مع حماية العينين."
+  },
+  {
+   "sku": "NXB-K-003",
+   "slug": "cuddle-soft-baby-lotion",
+   "audience": "kids",
+   "categories": [
+    "kids-lotion"
+   ],
+   "brand": "nuage",
+   "shape": "pump",
+   "tone": "#f2dfe3",
+   "en": "Cuddle Soft Baby Lotion",
+   "ar": "لوشن الأطفال كادل سوفت",
+   "short_en": "A light, quickly absorbed lotion that keeps baby's skin soft after bath time.",
+   "short_ar": "لوشن خفيف سريع الامتصاص يحافظ على نعومة بشرة الطفل بعد الاستحمام.",
+   "price": 49,
+   "special": 42,
+   "size": "200 ml",
+   "skin": "sensitive",
+   "age": "babies",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Aqua, glycerin, shea butter, sunflower seed oil, oat extract (demo listing).",
+   "ing_ar": "ماء، جلسرين، زبدة الشيا، زيت دوار الشمس، مستخلص الشوفان (قائمة توضيحية).",
+   "use_en": "Smooth gently over the body after bathing. For external use only.",
+   "use_ar": "وزّعيه برفق على الجسم بعد الاستحمام. للاستخدام الخارجي فقط."
+  },
+  {
+   "sku": "NXB-K-004",
+   "slug": "diaper-area-care-cream",
+   "audience": "kids",
+   "categories": [
+    "kids-diaper"
+   ],
+   "brand": "nuage",
+   "shape": "tube",
+   "tone": "#e3eedd",
+   "en": "Diaper Area Care Cream",
+   "ar": "كريم العناية بمنطقة الحفاض",
+   "short_en": "A soft protective cream for everyday care of the diaper area at each change.",
+   "short_ar": "كريم واقٍ ناعم للعناية اليومية بمنطقة الحفاض عند كل تغيير.",
+   "price": 39,
+   "special": null,
+   "size": "100 ml",
+   "skin": "sensitive",
+   "age": "babies",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Demo listing only — check the official label of any real diaper cream. Illustrative base: aqua, glycerin, shea butter.",
+   "ing_ar": "قائمة توضيحية فقط — راجعي الملصق الرسمي لأي كريم حفاض حقيقي. قاعدة توضيحية: ماء، جلسرين، زبدة الشيا.",
+   "use_en": "Apply a thin layer to clean, dry skin at each change. Ask a pharmacist or doctor about any irritation.",
+   "use_ar": "ضعي طبقة رقيقة على بشرة نظيفة وجافة عند كل تغيير. استشيري الصيدلي أو الطبيب عند ظهور أي تهيّج."
+  },
+  {
+   "sku": "NXB-K-005",
+   "slug": "baby-moisturizing-cream",
+   "audience": "kids",
+   "categories": [
+    "kids-skincare"
+   ],
+   "brand": "nuage",
+   "shape": "jar",
+   "tone": "#fbeedd",
+   "en": "Cloud Comfort Baby Cream",
+   "ar": "كريم الأطفال كلاود كومفورت",
+   "short_en": "A rich, gentle cream for baby's face and body on dry or windy days.",
+   "short_ar": "كريم غني ولطيف لوجه الطفل وجسمه في الأيام الجافة أو العاصفة.",
+   "price": 45,
+   "special": null,
+   "size": "100 ml",
+   "skin": "dry",
+   "age": "babies",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, shea butter, squalane, panthenol (demo listing).",
+   "ing_ar": "ماء، جلسرين، زبدة الشيا، سكوالين، بانثينول (قائمة توضيحية).",
+   "use_en": "Massage a small amount onto clean skin as needed.",
+   "use_ar": "دلّكي كمية صغيرة على بشرة نظيفة عند الحاجة."
+  },
+  {
+   "sku": "NXB-K-006",
+   "slug": "kids-detangling-spray",
+   "audience": "kids",
+   "categories": [
+    "kids-personal"
+   ],
+   "brand": "nuage",
+   "shape": "spray",
+   "tone": "#f6c9b5",
+   "en": "Easy Comb Kids Detangling Spray",
+   "ar": "بخاخ فك تشابك شعر الأطفال إيزي كومب",
+   "short_en": "A light leave-in spray that makes brushing tangled hair quicker and calmer.",
+   "short_ar": "بخاخ خفيف يُترك على الشعر ويجعل تمشيط الشعر المتشابك أسرع وأهدأ.",
+   "price": 45,
+   "special": 38,
+   "size": "200 ml",
+   "skin": "all-hair",
+   "age": "kids",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 1,
+   "ing_en": "Aqua, glycerin, behentrimonium chloride, apple extract, parfum (demo listing).",
+   "ing_ar": "ماء، جلسرين، بيهينتريمونيوم كلورايد، مستخلص التفاح، عطر (قائمة توضيحية).",
+   "use_en": "Spray onto damp or dry hair and comb through gently from ends to roots.",
+   "use_ar": "رشّيه على الشعر الرطب أو الجاف ومشّطيه برفق من الأطراف إلى الجذور."
+  },
+  {
+   "sku": "NXB-K-007",
+   "slug": "kids-mineral-sun-lotion",
+   "audience": "kids",
+   "categories": [
+    "kids-personal",
+    "skincare-sunscreen"
+   ],
+   "brand": "nuage",
+   "shape": "tube",
+   "tone": "#fde2a6",
+   "en": "Little Sun Kids Mineral Sun Lotion",
+   "ar": "لوشن الشمس المعدني للأطفال ليتل صن",
+   "short_en": "A mineral-style sun lotion concept for children aged 3 and up, easy to spread at the beach or park.",
+   "short_ar": "فكرة لوشن شمس بطابع معدني للأطفال من 3 سنوات فأكثر، سهل الفرد في البحر أو الحديقة.",
+   "price": 69,
+   "special": null,
+   "size": "100 ml",
+   "skin": "sensitive",
+   "age": "kids",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Demo listing only — the protection factor and filters of a real children's sunscreen must be read from its official label.",
+   "ing_ar": "قائمة توضيحية فقط — يجب قراءة معامل الحماية والفلاتر لأي واقٍ حقيقي للأطفال من ملصقه الرسمي.",
+   "use_en": "For children 3+ years. Apply generously before sun exposure and follow the real product label; keep young children in the shade.",
+   "use_ar": "للأطفال من 3 سنوات فأكثر. يوضع بكمية وافرة قبل التعرض للشمس مع اتباع ملصق المنتج الحقيقي، وأبقوا الصغار في الظل."
+  },
+  {
+   "sku": "NXB-K-008",
+   "slug": "foaming-kids-hand-wash",
+   "audience": "kids",
+   "categories": [
+    "kids-personal"
+   ],
+   "brand": "nuage",
+   "shape": "pump",
+   "tone": "#cfe7d3",
+   "en": "Foaming Kids Hand Wash — Pear",
+   "ar": "رغوة غسل اليدين للأطفال — بالإجاص",
+   "short_en": "A fun foaming hand wash with a soft pear scent that makes hand washing easy for kids.",
+   "short_ar": "رغوة مرحة لغسل اليدين برائحة الإجاص الناعمة تجعل غسل اليدين سهلًا للأطفال.",
+   "price": 29,
+   "special": null,
+   "size": "250 ml",
+   "skin": "all-skin",
+   "age": "kids",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, coco-glucoside, glycerin, pear extract, parfum (demo listing).",
+   "ing_ar": "ماء، كوكو غلوكوسايد، جلسرين، مستخلص الإجاص، عطر (قائمة توضيحية).",
+   "use_en": "Pump one dose of foam onto wet hands, rub for 20 seconds and rinse.",
+   "use_ar": "ضخّة واحدة من الرغوة على اليدين المبللتين، افركوا 20 ثانية ثم اشطفوا."
+  },
+  {
+   "sku": "NXB-K-009",
+   "slug": "kids-2in1-shampoo-body-wash",
+   "audience": "kids",
+   "categories": [
+    "kids-personal"
+   ],
+   "brand": "nuage",
+   "shape": "bottle",
+   "tone": "#c9dcf3",
+   "en": "Splash 2-in-1 Kids Shampoo & Body Wash",
+   "ar": "شامبو وغسول جسم للأطفال سبلاش 2 في 1",
+   "short_en": "One gentle wash for hair and body that keeps bath time simple.",
+   "short_ar": "غسول لطيف واحد للشعر والجسم يجعل وقت الاستحمام أبسط.",
+   "price": 49,
+   "special": null,
+   "size": "300 ml",
+   "skin": "all-skin",
+   "age": "kids",
+   "featured": 1,
+   "new": 0,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, decyl glucoside, glycerin, aloe vera leaf juice, parfum (demo listing).",
+   "ing_ar": "ماء، ديسيل غلوكوسايد، جلسرين، عصارة أوراق الصبار، عطر (قائمة توضيحية).",
+   "use_en": "Lather onto wet hair and body, then rinse well. Keep out of eyes.",
+   "use_ar": "يُرغّى على الشعر والجسم المبللين ثم يُشطف جيدًا. تجنّبوا العينين."
+  },
+  {
+   "sku": "NXB-W-020",
+   "slug": "micellar-cleansing-water",
+   "audience": "women",
+   "categories": [
+    "skincare-cleansers",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "bottle",
+   "tone": "#eaf1f3",
+   "en": "Pure Calm Micellar Cleansing Water",
+   "ar": "ماء ميسيلار المنظف بيور كالم",
+   "short_en": "A no-rinse micellar water that lifts makeup and the day’s traces in one gentle step.",
+   "short_ar": "ماء ميسيلار لا يحتاج إلى شطف يزيل المكياج وآثار اليوم بخطوة لطيفة واحدة.",
+   "price": 55,
+   "special": null,
+   "size": "400 ml",
+   "skin": "sensitive",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, poloxamer 184, cucumber extract, panthenol (demo listing).",
+   "ing_ar": "ماء، جلسرين، بولوكسامر 184، مستخلص الخيار، بانثينول (قائمة توضيحية).",
+   "use_en": "Soak a cotton pad and press gently over face and eyes; no rinsing needed.",
+   "use_ar": "بلّلي قطنة واضغطيها برفق على الوجه والعينين، دون حاجة إلى الشطف."
+  },
+  {
+   "sku": "NXB-W-021",
+   "slug": "calm-night-niacinamide-serum",
+   "audience": "women",
+   "categories": [
+    "skincare-serums",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "dropper",
+   "tone": "#efe2cf",
+   "en": "Calm Night Niacinamide Serum",
+   "ar": "سيروم كالم نايت بالنياسيناميد",
+   "short_en": "A silky evening serum with niacinamide for a smooth, even-looking finish by morning.",
+   "short_ar": "سيروم مسائي حريري بالنياسيناميد لمظهر أنعم وأكثر توازنًا في الصباح.",
+   "price": 115,
+   "special": 99,
+   "size": "30 ml",
+   "skin": "oily",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Aqua, niacinamide, glycerin, zinc PCA, panthenol (demo listing).",
+   "ing_ar": "ماء، نياسيناميد، جلسرين، زنك PCA، بانثينول (قائمة توضيحية).",
+   "use_en": "Apply 2–3 drops to clean skin in the evening before moisturizer.",
+   "use_ar": "ضعي 2–3 قطرات على بشرة نظيفة مساءً قبل المرطب."
+  },
+  {
+   "sku": "NXB-W-022",
+   "slug": "soft-shine-lip-gloss-rose-nude",
+   "audience": "women",
+   "categories": [
+    "makeup-lips",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "wand",
+   "tone": "#d99a90",
+   "en": "Soft Shine Lip Gloss — Rose Nude",
+   "ar": "ملمّع الشفاه سوفت شاين — روز نود",
+   "short_en": "A cushiony, non-sticky gloss with a sheer rose-nude tint and soft shine.",
+   "short_ar": "ملمّع شفاه ناعم وغير لزج بلون وردي نود شفاف ولمعة رقيقة.",
+   "price": 55,
+   "special": null,
+   "size": "6 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Polybutene, octyldodecanol, jojoba seed oil, pigments, flavour (demo listing).",
+   "ing_ar": "بولي بيوتين، أوكتيل دوديكانول، زيت الجوجوبا، أصباغ، نكهة (قائمة توضيحية).",
+   "use_en": "Swipe onto bare lips or over lipstick.",
+   "use_ar": "يوضع على الشفاه مباشرة أو فوق أحمر الشفاه."
+  },
+  {
+   "sku": "NXB-W-023",
+   "slug": "precision-liquid-eyeliner",
+   "audience": "women",
+   "categories": [
+    "makeup-eyes",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "wand",
+   "tone": "#1f1a1c",
+   "en": "Precision Liquid Eyeliner — Black",
+   "ar": "آيلاينر سائل بريسيجن — أسود",
+   "short_en": "A fine felt-tip liner for crisp definition, from a soft line to a bold wing.",
+   "short_ar": "آيلاينر بطرف رفيع لتحديد دقيق، من خط ناعم إلى ذيل جريء.",
+   "price": 59,
+   "special": null,
+   "size": "0.6 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, acrylates copolymer, butylene glycol, iron oxides (demo listing).",
+   "ing_ar": "ماء، بوليمر أكريلات، بيوتيلين غلايكول، أكاسيد الحديد (قائمة توضيحية).",
+   "use_en": "Draw along the lash line from the inner corner outwards.",
+   "use_ar": "ارسمي على خط الرموش من الزاوية الداخلية نحو الخارج."
+  },
+  {
+   "sku": "NXB-W-024",
+   "slug": "cheek-bloom-powder-blush",
+   "audience": "women",
+   "categories": [
+    "makeup-cheeks",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "compact",
+   "tone": "#e3a29b",
+   "en": "Cheek Bloom Powder Blush — Petal",
+   "ar": "بلاشر بودرة تشيك بلوم — بيتال",
+   "short_en": "A finely milled powder blush for a soft, buildable flush.",
+   "short_ar": "بلاشر بودرة ناعم الطحن لتورّد طبيعي قابل للبناء.",
+   "price": 79,
+   "special": null,
+   "size": "5 g",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Talc, mica, zinc stearate, iron oxides (demo listing).",
+   "ing_ar": "تلك، ميكا، ستيرات الزنك، أكاسيد الحديد (قائمة توضيحية).",
+   "use_en": "Sweep lightly onto the apples of the cheeks and blend upwards.",
+   "use_ar": "وزّعيه بخفة على أعلى الخدين وادمجيه نحو الأعلى."
+  },
+  {
+   "sku": "NXB-W-025",
+   "slug": "golden-hour-highlighter",
+   "audience": "women",
+   "categories": [
+    "makeup-cheeks",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "compact",
+   "tone": "#e9c99b",
+   "en": "Golden Hour Highlighter",
+   "ar": "هايلايتر غولدن آور",
+   "short_en": "A smooth champagne-gold highlighter that catches the light on cheekbones.",
+   "short_ar": "هايلايتر ناعم بلون ذهبي شمباني يعكس الضوء على عظام الخد.",
+   "price": 85,
+   "special": 72,
+   "size": "8 g",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Mica, talc, dimethicone, titanium dioxide (demo listing).",
+   "ing_ar": "ميكا، تلك، ديميثيكون، ثاني أكسيد التيتانيوم (قائمة توضيحية).",
+   "use_en": "Tap onto the high points of the face with a fan brush or fingertip.",
+   "use_ar": "ضعيه على النقاط البارزة من الوجه بفرشاة مروحية أو بطرف الإصبع."
+  },
+  {
+   "sku": "NXB-W-026",
+   "slug": "soft-focus-makeup-brush-set",
+   "audience": "women",
+   "categories": [
+    "makeup-tools",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "brushes",
+   "tone": "#c9a46a",
+   "en": "Soft Focus Makeup Brush Set",
+   "ar": "مجموعة فرش المكياج سوفت فوكس",
+   "short_en": "Five soft synthetic brushes for complexion, cheeks and eyes, in a travel pouch.",
+   "short_ar": "خمس فرش صناعية ناعمة للوجه والخدود والعيون في حقيبة سفر.",
+   "price": 119,
+   "special": null,
+   "size": "5 pieces",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Synthetic fibres, aluminium ferrules, wooden handles (demo listing).",
+   "ing_ar": "ألياف صناعية، حلقات ألمنيوم، مقابض خشبية (قائمة توضيحية).",
+   "use_en": "Wash weekly with mild soap and leave to dry flat.",
+   "use_ar": "تُغسل أسبوعيًا بصابون لطيف وتُترك لتجف بشكل أفقي."
+  },
+  {
+   "sku": "NXB-W-027",
+   "slug": "blending-sponge-duo",
+   "audience": "women",
+   "categories": [
+    "makeup-tools",
+    "women"
+   ],
+   "brand": "dune",
+   "shape": "sponge",
+   "tone": "#f0b9b0",
+   "en": "Blending Sponge Duo",
+   "ar": "زوج إسفنجات الدمج",
+   "short_en": "Two latex-free sponges for a smooth, even finish with liquids and creams.",
+   "short_ar": "إسفنجتان خاليتان من اللاتكس لنتيجة ناعمة ومتساوية مع السوائل والكريمات.",
+   "price": 39,
+   "special": null,
+   "size": "2 pieces",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Latex-free polyurethane foam (demo listing).",
+   "ing_ar": "إسفنج بولي يوريثان خالٍ من اللاتكس (قائمة توضيحية).",
+   "use_en": "Dampen, squeeze out excess water and bounce over the skin.",
+   "use_ar": "بلّليها واعصري الماء الزائد ثم اطرقي بها على البشرة."
+  },
+  {
+   "sku": "NXB-W-028",
+   "slug": "silk-repair-conditioner",
+   "audience": "women",
+   "categories": [
+    "hair-conditioner",
+    "women"
+   ],
+   "brand": "saffron",
+   "shape": "bottle",
+   "tone": "#e4c79a",
+   "en": "Silk Repair Conditioner",
+   "ar": "بلسم سيلك ريبير",
+   "short_en": "A light conditioner that detangles and softens without weighing hair down.",
+   "short_ar": "بلسم خفيف يفك التشابك وينعّم الشعر دون أن يثقله.",
+   "price": 69,
+   "special": null,
+   "size": "300 ml",
+   "skin": "dry-hair",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, cetearyl alcohol, behentrimonium chloride, argan kernel oil (demo listing).",
+   "ing_ar": "ماء، كحول سيتيريل، بيهينتريمونيوم كلورايد، زيت الأرغان (قائمة توضيحية).",
+   "use_en": "Apply to lengths after shampoo, leave 2 minutes and rinse.",
+   "use_ar": "ضعيه على أطوال الشعر بعد الشامبو، اتركيه دقيقتين ثم اشطفيه."
+  },
+  {
+   "sku": "NXB-W-029",
+   "slug": "argan-glow-hair-oil",
+   "audience": "women",
+   "categories": [
+    "hair-oils",
+    "women"
+   ],
+   "brand": "saffron",
+   "shape": "dropper",
+   "tone": "#c98f45",
+   "en": "Argan Glow Hair Oil",
+   "ar": "زيت الشعر أرغان غلو",
+   "short_en": "A weightless finishing oil for shine and softness on dry ends.",
+   "short_ar": "زيت خفيف للمسة نهائية تمنح اللمعان والنعومة للأطراف الجافة.",
+   "price": 89,
+   "special": null,
+   "size": "50 ml",
+   "skin": "dry-hair",
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Argan kernel oil, camellia seed oil, tocopherol, parfum (demo listing).",
+   "ing_ar": "زيت الأرغان، زيت بذور الكاميليا، توكوفيرول، عطر (قائمة توضيحية).",
+   "use_en": "Warm 2–3 drops in palms and smooth over mid-lengths and ends.",
+   "use_ar": "دفّئي 2–3 قطرات بين الكفين ووزّعيها على منتصف الشعر والأطراف."
+  },
+  {
+   "sku": "NXB-W-030",
+   "slug": "smooth-finish-styling-cream",
+   "audience": "women",
+   "categories": [
+    "hair-styling",
+    "women"
+   ],
+   "brand": "saffron",
+   "shape": "tube",
+   "tone": "#efd9b8",
+   "en": "Smooth Finish Styling Cream",
+   "ar": "كريم تصفيف سموث فينيش",
+   "short_en": "A soft-hold cream that tames frizz-prone hair for a polished look.",
+   "short_ar": "كريم بثبات خفيف يروّض الشعر المتطاير لمظهر مصقول.",
+   "price": 65,
+   "special": null,
+   "size": "150 ml",
+   "skin": "all-hair",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 0,
+   "ing_en": "Aqua, cetyl alcohol, glycerin, shea butter, parfum (demo listing).",
+   "ing_ar": "ماء، كحول سيتيل، جلسرين، زبدة الشيا، عطر (قائمة توضيحية).",
+   "use_en": "Work a small amount through damp hair before drying.",
+   "use_ar": "وزّعي كمية صغيرة على الشعر الرطب قبل التجفيف."
+  },
+  {
+   "sku": "NXB-W-031",
+   "slug": "rose-shea-hand-cream",
+   "audience": "women",
+   "categories": [
+    "body-hands",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "tube",
+   "tone": "#ecc3bf",
+   "en": "Rose & Shea Hand Cream",
+   "ar": "كريم اليدين بالورد والشيا",
+   "short_en": "A quick-absorbing hand cream with shea butter and a soft rose scent.",
+   "short_ar": "كريم يدين سريع الامتصاص بزبدة الشيا ورائحة ورد ناعمة.",
+   "price": 39,
+   "special": null,
+   "size": "75 ml",
+   "skin": "dry",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, shea butter, rose water, dimethicone (demo listing).",
+   "ing_ar": "ماء، جلسرين، زبدة الشيا، ماء الورد، ديميثيكون (قائمة توضيحية).",
+   "use_en": "Massage into hands as often as needed.",
+   "use_ar": "دلّكيه على اليدين كلما احتجتِ."
+  },
+  {
+   "sku": "NXB-W-032",
+   "slug": "brown-sugar-body-scrub",
+   "audience": "women",
+   "categories": [
+    "body-scrubs",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "jar",
+   "tone": "#d8b48f",
+   "en": "Brown Sugar Body Scrub",
+   "ar": "مقشّر الجسم بالسكر البني",
+   "short_en": "A rich sugar scrub with nourishing oils for smoother-feeling skin.",
+   "short_ar": "مقشّر غني بالسكر والزيوت المغذية لبشرة أنعم ملمسًا.",
+   "price": 75,
+   "special": 65,
+   "size": "250 g",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Sucrose, sweet almond oil, shea butter, vanilla extract (demo listing).",
+   "ing_ar": "سكروز، زيت اللوز الحلو، زبدة الشيا، مستخلص الفانيليا (قائمة توضيحية).",
+   "use_en": "Massage onto damp skin in circular motions, then rinse. Use 1–2 times a week.",
+   "use_ar": "دلّكيه على بشرة رطبة بحركات دائرية ثم اشطفي. مرة أو مرتين أسبوعيًا."
+  },
+  {
+   "sku": "NXB-W-033",
+   "slug": "vanilla-musk-body-mist",
+   "audience": "women",
+   "categories": [
+    "frag-women",
+    "women"
+   ],
+   "brand": "essentials",
+   "shape": "spray",
+   "tone": "#f1dcc7",
+   "en": "Vanilla Musk Body Mist",
+   "ar": "معطّر الجسم فانيلا مسك",
+   "short_en": "A light, airy body mist with warm vanilla and clean musk.",
+   "short_ar": "معطّر جسم خفيف بنفحات الفانيليا الدافئة والمسك النظيف.",
+   "price": 79,
+   "special": null,
+   "size": "150 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 1,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Alcohol denat., aqua, parfum (demo listing). Notes: vanilla, musk.",
+   "ing_ar": "كحول، ماء، عطر (قائمة توضيحية). النفحات: فانيليا، مسك.",
+   "use_en": "Mist over body and clothes from about 20 cm away.",
+   "use_ar": "يُرش على الجسم والملابس من مسافة 20 سم تقريبًا."
+  },
+  {
+   "sku": "NXB-W-034",
+   "slug": "oat-almond-daily-body-lotion",
+   "audience": "women",
+   "categories": [
+    "body-lotion",
+    "women"
+   ],
+   "brand": "lumiere",
+   "shape": "pump",
+   "tone": "#efe3d0",
+   "en": "Oat & Almond Daily Body Lotion",
+   "ar": "لوشن الجسم اليومي بالشوفان واللوز",
+   "short_en": "A light everyday lotion that leaves skin soft without a greasy feel.",
+   "short_ar": "لوشن يومي خفيف يترك البشرة ناعمة دون إحساس دهني.",
+   "price": 59,
+   "special": null,
+   "size": "300 ml",
+   "skin": "all-skin",
+   "age": "adults",
+   "featured": 0,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Aqua, glycerin, oat kernel extract, sweet almond oil, cetearyl alcohol (demo listing).",
+   "ing_ar": "ماء، جلسرين، مستخلص الشوفان، زيت اللوز الحلو، كحول سيتيريل (قائمة توضيحية).",
+   "use_en": "Smooth over the body after bathing.",
+   "use_ar": "وزّعيه على الجسم بعد الاستحمام."
+  },
+  {
+   "sku": "NXB-U-001",
+   "slug": "amber-woods-unisex-edp",
+   "audience": "unisex",
+   "categories": [
+    "frag-unisex"
+   ],
+   "brand": "essentials",
+   "shape": "perfume",
+   "tone": "#b9875a",
+   "en": "Amber Woods Eau de Parfum",
+   "ar": "عطر أمبر وودز أو دو بارفان",
+   "short_en": "A warm unisex scent of amber, cedar and soft spice.",
+   "short_ar": "عطر دافئ للجنسين بنفحات العنبر والأرز والتوابل الناعمة.",
+   "price": 239,
+   "special": null,
+   "size": "100 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 1,
+   "new": 0,
+   "best": 1,
+   "offer": 0,
+   "ing_en": "Alcohol denat., parfum, aqua (demo listing). Notes: amber, cedar, cardamom.",
+   "ing_ar": "كحول، عطر، ماء (قائمة توضيحية). النفحات: عنبر، أرز، هيل.",
+   "use_en": "Spray onto pulse points from about 15 cm away.",
+   "use_ar": "يُرش على نقاط النبض من مسافة 15 سم تقريبًا."
+  },
+  {
+   "sku": "NXB-U-002",
+   "slug": "neroli-breeze-unisex-edt",
+   "audience": "unisex",
+   "categories": [
+    "frag-unisex"
+   ],
+   "brand": "essentials",
+   "shape": "perfume",
+   "tone": "#e8dca0",
+   "en": "Neroli Breeze Eau de Toilette",
+   "ar": "عطر نيرولي بريز أو دو تواليت",
+   "short_en": "A bright, fresh unisex scent of neroli, bergamot and white tea.",
+   "short_ar": "عطر منعش ومشرق للجنسين بنفحات النيرولي والبرغموت والشاي الأبيض.",
+   "price": 199,
+   "special": 169,
+   "size": "100 ml",
+   "skin": null,
+   "age": "adults",
+   "featured": 0,
+   "new": 1,
+   "best": 0,
+   "offer": 1,
+   "ing_en": "Alcohol denat., parfum, aqua (demo listing). Notes: neroli, bergamot, white tea.",
+   "ing_ar": "كحول، عطر، ماء (قائمة توضيحية). النفحات: نيرولي، برغموت، شاي أبيض.",
+   "use_en": "Spray generously; refresh during the day.",
+   "use_ar": "يُرش بسخاء ويجدد خلال اليوم."
+  }
+ ],
+ "version": 2,
+ "retired_category_slugs": [
+  "men-deodorants",
+  "kids-hair-care",
+  "kids-gentle-sunscreen"
+ ],
+ "retired_brand_options": [
+  "Nike",
+  "Adidas",
+  "Elegance"
+ ],
+ "unfilter_attributes": [
+  "color",
+  "size",
+  "shoes_type",
+  "heels"
+ ]
+}

@@ -1,0 +1,2 @@
+# Nexora: catalogue images (products, categories, theme assets) ship with the repository
+# so the deployed container has them. Nothing in this folder is ignored.

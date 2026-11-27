@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" fill="none">
+  <defs>
+    <linearGradient id="backdrop" x1="90" y1="70" x2="690" y2="710" gradientUnits="userSpaceOnUse"><stop stop-color="#F6E9DE"/><stop offset=".52" stop-color="#EFD9D5"/><stop offset="1" stop-color="#DDB9B6"/></linearGradient>
+    <linearGradient id="arch" x1="180" y1="110" x2="565" y2="630" gradientUnits="userSpaceOnUse"><stop stop-color="#FBF4EC"/><stop offset=".55" stop-color="#E7C8C4"/><stop offset="1" stop-color="#C98F91"/></linearGradient>
+    <linearGradient id="glass" x1="270" y1="250" x2="475" y2="605" gradientUnits="userSpaceOnUse"><stop stop-color="#FFF9EE" stop-opacity=".94"/><stop offset=".3" stop-color="#E6B8A7" stop-opacity=".88"/><stop offset=".7" stop-color="#C78382" stop-opacity=".95"/><stop offset="1" stop-color="#F5D9C8"/></linearGradient>
+    <linearGradient id="gold" x1="330" y1="160" x2="430" y2="225" gradientUnits="userSpaceOnUse"><stop stop-color="#89664D"/><stop offset=".35" stop-color="#E3C894"/><stop offset=".65" stop-color="#B08B61"/><stop offset="1" stop-color="#F3D9A1"/></linearGradient>
+    <linearGradient id="box" x1="476" y1="330" x2="651" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#D6B9A0"/><stop offset="1" stop-color="#A77B72"/></linearGradient>
+    <filter id="shadow" x="120" y="160" width="570" height="570" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="soft" x="70" y="80" width="620" height="660" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+  <rect width="760" height="760" rx="42" fill="url(#backdrop)"/>
+  <circle cx="630" cy="120" r="150" fill="#FFF8EE" fill-opacity=".34"/>
+  <path d="M127 647V350c0-144 112-261 253-261s253 117 253 261v297H127Z" fill="url(#arch)" fill-opacity=".76"/>
+  <path d="M181 647V368c0-114 89-206 199-206s199 92 199 206v279H181Z" fill="#FAF1E8" fill-opacity=".28"/>
+  <ellipse cx="390" cy="656" rx="231" ry="47" fill="#623D41" fill-opacity=".22" filter="url(#shadow)"/>
+  <!-- sculpted perfume box -->
+  <path d="M492 362h135v276H492z" fill="url(#box)"/>
+  <path d="M492 362h135v27H492z" fill="#F4E6D8" fill-opacity=".38"/>
+  <path d="M511 422h97v137h-97z" fill="#F5E8D9" fill-opacity=".56"/>
+  <text x="559" y="482" text-anchor="middle" fill="#6F4145" font-family="Georgia,serif" font-size="13" letter-spacing="3">NEXORA</text>
+  <text x="559" y="505" text-anchor="middle" fill="#7E5A55" font-family="Arial,sans-serif" font-size="7" letter-spacing="2">EAU DE PARFUM</text>
+  <!-- bottle shadow and glass -->
+  <path d="M267 349c0-24 20-44 44-44h133c24 0 44 20 44 44v232c0 44-36 80-80 80h-61c-44 0-80-36-80-80V349Z" fill="#70474B" fill-opacity=".18" filter="url(#soft)"/>
+  <path d="M284 347c0-22 18-40 40-40h107c22 0 40 18 40 40v226c0 37-30 67-67 67h-53c-37 0-67-30-67-67V347Z" fill="url(#glass)" stroke="#FFF8EE" stroke-opacity=".9" stroke-width="5"/>
+  <path d="M305 350c0-12 10-22 22-22h14v245c0 18 5 34 14 48-29-7-50-33-50-64V350Z" fill="#FFF9F0" fill-opacity=".4"/>
+  <path d="M336 307v-61c0-15 12-27 27-27h29c15 0 27 12 27 27v61" fill="#EBCFBD" stroke="#FFF5E8" stroke-width="4"/>
+  <rect x="337" y="178" width="82" height="57" rx="10" fill="url(#gold)"/>
+  <path d="M344 186h68v7h-68z" fill="#FFF3CF" fill-opacity=".45"/>
+  <rect x="310" y="405" width="136" height="104" rx="4" fill="#F7EBDD" fill-opacity=".9"/>
+  <path d="M323 418h110v1H323z" fill="#B78B6C" fill-opacity=".5"/>
+  <text x="378" y="455" text-anchor="middle" fill="#713D48" font-family="Georgia,serif" font-size="17" letter-spacing="4">NEXORA</text>
+  <text x="378" y="477" text-anchor="middle" fill="#8B6B63" font-family="Arial,sans-serif" font-size="8" letter-spacing="2">EAU DE PARFUM</text>
+  <text x="378" y="492" text-anchor="middle" fill="#A4887B" font-family="Arial,sans-serif" font-size="6" letter-spacing="1.5">50 ML · PALESTINE</text>
+  <!-- botanical branch -->
+  <path d="M153 600c57-91 68-166 61-250" stroke="#8E7463" stroke-width="3" stroke-linecap="round"/>
+  <path d="M194 457c-48-1-69-25-75-59 39-2 68 14 75 59ZM205 399c37-23 46-52 33-82-34 17-48 44-33 82ZM170 523c-35-3-59-22-66-51 32 0 56 16 66 51ZM214 352c-26-17-35-40-27-64 25 13 36 35 27 64Z" fill="#71816B" fill-opacity=".75"/>
+  <path d="M147 365c-20-21-17-44 3-60 22 20 22 42-3 60Zm25-28c-4-25 9-42 34-43 7 27-5 44-34 43Z" fill="#D0A2A3"/>
+  <circle cx="160" cy="344" r="12" fill="#E9C8BF"/>
+  <!-- petals -->
+  <ellipse cx="577" cy="269" rx="13" ry="34" transform="rotate(-40 577 269)" fill="#FAEEE5" fill-opacity=".85"/>
+  <ellipse cx="601" cy="285" rx="13" ry="34" transform="rotate(24 601 285)" fill="#E9C8C3"/>
+  <ellipse cx="570" cy="305" rx="13" ry="34" transform="rotate(70 570 305)" fill="#F9E9DC"/>
+  <circle cx="582" cy="288" r="11" fill="#D6B57F"/>
+  <rect x="42" y="674" width="676" height="1" fill="#FFF9F2" fill-opacity=".6"/>
+</svg>
