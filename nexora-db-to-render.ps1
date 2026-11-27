@@ -18,8 +18,15 @@ if (-not (Test-Path $php)) { $php = (Get-Command php -ErrorAction Stop).Source }
 $extDir = Join-Path (Split-Path -Parent $php) 'ext'
 if (-not (Test-Path (Join-Path $extDir 'php_pdo_pgsql.dll'))) { throw "php_pdo_pgsql.dll was not found in $extDir" }
 
-$secure = Read-Host 'Paste the External Database URL from Render (hidden)' -AsSecureString
-$url = [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+# Takes the URL from the clipboard (click the copy icon next to "External Database URL" in Render first).
+$url = "$(Get-Clipboard -Raw)".Trim()
+if ($url.StartsWith('postgres')) {
+    Write-Host 'Using the Render database URL from the clipboard.'
+    Set-Clipboard -Value ' '   # clear it so the password does not stay in the clipboard
+} else {
+    $secure = Read-Host 'Paste the External Database URL from Render (hidden)' -AsSecureString
+    $url = [Runtime.InteropServices.Marshal]::PtrToStringBSTR([Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure))
+}
 if (-not $url.StartsWith('postgres')) { throw 'That does not look like a PostgreSQL URL (it should start with postgresql://).' }
 
 $env:NEXORA_PG_URL = $url

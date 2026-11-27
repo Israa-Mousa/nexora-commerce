@@ -7,6 +7,9 @@ cd /var/www/html
 
 : "${PORT:=10000}"
 
+# Bagisto checks for a .env file even when Render provides configuration as environment variables.
+touch .env
+
 if [[ -z "${APP_KEY:-}" ]]; then
     echo "[nexora] APP_KEY is not set — add it in Render > Environment." >&2
     exit 1

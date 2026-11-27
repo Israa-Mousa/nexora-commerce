@@ -208,6 +208,7 @@ if ($problems) {
     foreach ($problems as $t => $r) {
         echo '  '.str_pad($t, 40)." {$r['source']} -> {$r['target']}  {$r['status']}\n";
     }
-} else {
-    echo "All tables copied.\n";
+    exit(1);
 }
+
+echo "All tables copied.\n";
